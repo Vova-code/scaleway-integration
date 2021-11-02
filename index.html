@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Zen+Kurenaido"
+    />
+    <title>Scaleway</title>
+  </head>
+  <body>
+    <div class="pub">
+      <span>
+        <ion-icon name="information-circle-outline" size="medium"></ion-icon>
+        <p>
+          🆕Use Kubernetes Kosmos to launch pods through multiple cloud
+          providers & streamline the availability of your K8s workload🚀
+        </p>
+      </span>
+      <ion-icon class="cross" name="close-outline"></ion-icon>
+    </div>
+    <aside>
+      <img src="./logo.png" alt="logo_scaleway" />
+      <h3>Project Dashboard</h3>
+      <div>
+        <div class="aside_title">
+          <div>
+            <ion-icon name="hardware-chip-outline"></ion-icon>
+            <h4>Compute</h4>
+          </div>
+          <ion-icon class="chevron-up" name="chevron-up"></ion-icon>
+        </div>
+        <ul>
+          <li>Instances</li>
+          <li>Apple Silicon</li>
+          <li>Bare Metal</li>
+          <li>Kubernetes</li>
+          <li class="beta_container">
+            <p>Functions</p>
+            <p class="beta">BETA</p>
+          </li>
+          <li class="beta_container">
+            <p>Containers</p>
+            <p class="beta">BETA</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="aside_title">
+          <div>
+            <ion-icon name="aperture-outline"></ion-icon>
+            <h4>Storage</h4>
+          </div>
+          <ion-icon class="chevron-up" name="chevron-up"></ion-icon>
+        </div>
+        <ul>
+          <li class="selected_menu">Object Storage</li>
+          <li>Database</li>
+        </ul>
+      </div>
+      <div>
+        <div class="aside_title">
+          <div>
+            <ion-icon name="logo-apple-ar"></ion-icon>
+            <h4>VPC</h4>
+          </div>
+          <ion-icon class="chevron-up" name="chevron-up"></ion-icon>
+        </div>
+        <ul>
+          <li>Private Network</li>
+          <li>Public Gateway</li>
+        </ul>
+      </div>
+      <div>
+        <div class="aside_title">
+          <div>
+            <ion-icon name="globe-outline"></ion-icon>
+            <h4>Network</h4>
+          </div>
+          <ion-icon class="chevron-up" name="chevron-up"></ion-icon>
+        </div>
+        <ul>
+          <li>Load Balancer</li>
+          <li>DNS</li>
+        </ul>
+      </div>
+      <div>
+        <div class="aside_title">
+          <div>
+            <ion-icon name="settings-outline"></ion-icon>
+            <h4>Tools</h4>
+          </div>
+          <ion-icon class="chevron-up" name="chevron-up"></ion-icon>
+        </div>
+        <ul>
+          <li>Container Registry</li>
+        </ul>
+      </div>
+      <div>
+        <div class="aside_title">
+          <div>
+            <ion-icon name="aperture"></ion-icon>
+            <h4>IoT Station</h4>
+          </div>
+          <ion-icon class="chevron-up" name="chevron-up"></ion-icon>
+        </div>
+        <ul>
+          <li>IoT Hub</li>
+        </ul>
+      </div>
+    </aside>
+    <div class="page">
+      <header>
+        <select name="select" class="select">
+          <option value="default">🌟 default</option>
+          <option value="Prix 1">Prix 1</option>
+          <option value="Prix 2">Prix 2</option>
+        </select>
+        <div class="user">
+          <select name="select" class="crud">
+            <option value="create">Create</option>
+            <option value="update">Update</option>
+            <option value="delete">Delete</option>
+          </select>
+          <button class="icon">
+            <ion-icon class="mud" name="help-buoy-outline"></ion-icon>
+          </button>
+          <div class="user_info">
+            <p class="tittle">Organization:</p>
+            <p class="user_name">nine100</p>
+          </div>
+          <div class="user_icon">
+            <div class="user_name_icon">
+              <p>NI</p>
+            </div>
+            <ion-icon class="down_arrow" name="chevron-down-outline"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="back_header">
+          <ion-icon name="chevron-back"></ion-icon>
+          <p>Back to buckets</p>
+        </div>
+        <div class="main_content">
+          <h1>Create a Bucket</h1>
+          <section>
+            <div class="section_title">
+              <p>1</p>
+              <p>Name your bucket</p>
+            </div>
+            <div class="input_container">
+              <input
+                type="text"
+                name="bucket_name"
+                id="bucket_name"
+                placeholder="Bucket name"
+                required
+              />
+              <p>*</p>
+            </div>
+            <span class="info">
+              <ion-icon
+                name="information-circle-outline"
+                size="medium"
+              ></ion-icon>
+              <p>
+                Your bucket name can only contain the following characters (min
+                3): lowercase letters, digits, periods(.) and hyphens(.)
+              </p>
+            </span>
+          </section>
+          <section class="country_section">
+            <div class="section_title">
+              <p>2</p>
+              <p>Choose a Region</p>
+            </div>
+            <p>
+              A region refers to the geographical location in which your bucket
+              will be created
+            </p>
+            <div class="countries">
+              <div>PARIS</div>
+              <div>AMSTERDAM</div>
+              <div>WARSAW</div>
+            </div>
+          </section>
+          <section>
+            <div class="section_title">
+              <p>3</p>
+              <p>Set your Bucket Visibility</p>
+            </div>
+            <div class="privacy_form">
+              <p>Bucket Visibility specifies whether the list of objects</p>
+              <form action="post">
+                <label for="option1">
+                  <input type="radio" name="privacy" id="option1" />
+                  Public
+                </label>
+                <label for="option2">
+                  <input type="radio" name="privacy" id="option2" checked />
+                  Private
+                </label>
+              </form>
+            </div>
+          </section>
+          <section>
+            <div class="section_title">
+              <p>4</p>
+              <p>Estimated Cost</p>
+            </div>
+            <div class="advertissement">
+              <p>
+                This summary provides a cost estimation based on your
+                configuration, the amount of time you expect to use the
+                ressource for, and the scale of your expected usage. For the
+                purposes of this calculation, we consider that 1 month equals to
+                730 hours.
+              </p>
+              <div class="warning_advertissement">
+                <ion-icon name="warning"></ion-icon>
+                <p>
+                  Important notice: Chia farming on Scaleway Object Storage that
+                  occurs without prior authorization will be billed at €0.08 per
+                  GB. Read <a href="#">our blogpost</a> to learn more
+                </p>
+              </div>
+              <div class="recap_board">
+                <div class="left_side">
+                  <p class="bord_title">Estimated cost</p>
+                  <div>
+                    <p>Region</p>
+                    <p>PARIS</p>
+                  </div>
+                  <div>
+                    <p>Bucket visibility</p>
+                    <p>Private</p>
+                  </div>
+                  <div>
+                    <p>Storage</p>
+                    <p class="special_offer">75 GB free storage</p>
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Transfert</p>
+                    <p class="special_offer">75 GB outgoing transfert</p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="right_side">
+                  <p class="bord_title">Hour</p>
+                  <div>
+                    <p>€0.00</p>
+                  </div>
+                  <div>
+                    <p>€0.00</p>
+                  </div>
+                  <div>
+                    <p>€0.00</p>
+                  </div>
+                  <div>
+                    <p>€0.00</p>
+                  </div>
+                </div>
+              </div>
+              <button class="validation_cta">Create a bucket</button>
+            </div>
+            <div class="more">
+              <p>Blog</p>
+              <p>Pricing</p>
+              <p>Careers</p>
+              <p>Privacy</p>
+              <p>Cookies</p>
+              <p>API</p>
+            </div>
+          </section>
+          <div class="bottom_recap">
+            <div>
+              <p>Region</p>
+              <p>PARIS</p>
+            </div>
+            <div>
+              <p>Bucket visibility</p>
+              <p>Private</p>
+            </div>
+            <div>
+              <p>Estimated Cost</p>
+              <p>€0.00/Hour</p>
+            </div>
+            <button>Create</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>
